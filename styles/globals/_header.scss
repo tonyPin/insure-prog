@@ -62,7 +62,7 @@
     top: 80px;
     // background-image: url("../../images/bg-pattern-mobile-nav.svg"),
     //   linear-gradient(#2c2830, #2d2641);
-    background-image: url("/images/bg-pattern-mobile-nav.svg"),
+    background-image: url("../images/bg-pattern-mobile-nav.svg"),
       linear-gradient(#2c2830, #2d2641);
     background-repeat: no-repeat;
     background-size: contain;
@@ -85,7 +85,7 @@
     display: block;
     background-color: transparent;
     // background-image: url("../../images/icon-hamburger.svg");
-    background-image: url("/images/icon-hamburger.svg");
+    background-image: url("../images/icon-hamburger.svg");
     background-repeat: no-repeat;
     z-index: 9999;
     border: 0;
@@ -95,7 +95,7 @@
   }
   .menu-icon[aria-expanded="true"] {
     // background-image: url("../../images/icon-close.svg");
-    background-image: url("/images/icon-close.svg");
+    background-image: url("../images/icon-close.svg");
   }
 
   .nav-links {
