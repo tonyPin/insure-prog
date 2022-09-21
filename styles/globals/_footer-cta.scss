@@ -1,0 +1,69 @@
+.footer-cta {
+  background-color: #2d2641;
+  padding: 7.2rem 2.4rem;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  &::before {
+    content: url("../../images/bg-pattern-how-we-work-mobile.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+
+  h1 {
+    font-family: "DM Serif Display";
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: -0.555556px;
+    color: #ffffff;
+  }
+  a {
+    text-decoration: none;
+    padding: 1.3rem 2.4rem 1.2rem;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1000;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #2d2641;
+    }
+  }
+  &-btn-wrap {
+    margin-top: 5.3rem;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    &::before {
+      content: url("../../images/bg-pattern-how-we-work-desktop.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      text-align: left;
+    }
+
+    &-btn-wrap {
+      margin-top: 0;
+    }
+  }
+}
+.footer-cta-spacer {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+}

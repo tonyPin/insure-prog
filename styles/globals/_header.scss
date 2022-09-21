@@ -1,0 +1,113 @@
+.sr-only {
+  left: -100vw;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.6rem;
+  text-transform: uppercase;
+}
+.nav-links {
+  font-style: bold;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 1.36px;
+  a {
+    text-decoration: none;
+    color: #837d88;
+  }
+  a:hover {
+    font-weight: bold;
+    color: #2c2830;
+  }
+
+  &:nth-of-type(4) {
+    border: 1px solid #2c2830;
+
+    &:hover {
+      background-color: #2c2830;
+      border: 1px solid #ffffff;
+    }
+
+    a {
+      color: #2c2830;
+      font-weight: bold;
+      display: inline-block;
+      padding: 1.3rem 2.85rem;
+    }
+    a:hover {
+      color: #ffffff;
+      background-color: #2c2830;
+    }
+  }
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-list {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    background-image: url("../../images/bg-pattern-mobile-nav.svg"),
+      linear-gradient(#2c2830, #2d2641);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2.4rem;
+    display: inline-block;
+    text-align: center;
+    gap: 3rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    z-index: 1000;
+  }
+  .nav-list[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  .menu-icon {
+    display: block;
+    background-color: transparent;
+    background-image: url("../../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    z-index: 9999;
+    border: 0;
+    outline: none;
+    width: 3rem;
+    aspect-ratio: 1;
+  }
+  .menu-icon[aria-expanded="true"] {
+    background-image: url("../../images/icon-close.svg");
+  }
+
+  .nav-links {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    a {
+      color: #ffffff;
+    }
+
+    &:nth-of-type(4) {
+      border: 1px solid white;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
