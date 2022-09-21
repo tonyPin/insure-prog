@@ -4,7 +4,8 @@ footer {
   overflow: hidden;
 
   &:before {
-    content: url("../../images/bg-pattern-footer-mobile.svg");
+    // content: url("../../images/bg-pattern-footer-mobile.svg");
+    content: url("/images/bg-pattern-footer-mobile.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -13,7 +14,8 @@ footer {
     object-fit: contain;
 
     @media screen and (min-width: 768px) {
-      content: url("../../images/bg-pattern-footer-desktop.svg");
+      // content: url("../../images/bg-pattern-footer-desktop.svg");
+      content: url("/images/bg-pattern-footer-desktop.svg");
       object-fit: contain;
     }
   }
